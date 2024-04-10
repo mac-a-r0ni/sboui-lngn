@@ -16,5 +16,8 @@
 # This one will blacklist all Alien Bob packages
 #[0-9]+alien
 #
+# This would blacklist all of the SlackBuilds.org packages
+#[0-9]_SBo
+#
 # This one would blacklist anything with "flash" in the name
 #(.*)flash(.*)

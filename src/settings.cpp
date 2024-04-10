@@ -242,7 +242,7 @@ int read_config(const std::string & conf_file)
     std::getline(std::cin, response);
   }
 
-  if (! cfg.lookupValue("repo_tag", repo_tag)) { repo_tag = "_SBo"; }
+  if (! cfg.lookupValue("repo_tag", repo_tag)) { repo_tag = "_lngn"; }
 
   if ( (package_manager != "sbopkg") && (package_manager != "sbotools") &&
        (package_manager != "built-in") && (package_manager != "custom") )

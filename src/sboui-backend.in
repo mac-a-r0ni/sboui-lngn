@@ -6,7 +6,7 @@ CONF=${CONF:-@CONFDIR@/sboui-backend.conf}
 . $CONF
 
 # Build location
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/lngn}
 
 # Where to drop completed package
 OUTPUT=${OUTPUT:-/tmp}
@@ -72,7 +72,7 @@ function get_current_version ()
 # Checks if Ponce's git repo is being used
 function check_ponce_repo ()
 {
-  if [ "$REPO" == "https://github.com/Ponce/slackbuilds.git" ]; then
+  if [ "$REPO" == "https://github.com/mac-a-r0ni/lngnbuilds.git" ]; then
     echo 1
   else
     echo 0
@@ -160,7 +160,7 @@ function update ()
     else
       cd $REPO_DIR/../
       rm -rf $BASEDIR
-      git clone $REPO $BASEDIR 
+      git clone $REPO $BASEDIR
       CHECK=$?
       if [ $CHECK -ne 0 ]; then
         exit $CHECK

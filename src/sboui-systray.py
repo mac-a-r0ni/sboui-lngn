@@ -52,7 +52,7 @@ def on_left_click(event):
 
 if __name__ == '__main__':
     icon = gtk.status_icon_new_from_icon_name("sboui")
-    icon.set_tooltip_text('SBo updates are available')
+    icon.set_tooltip_text('lngn.net updates are available')
     icon.connect('popup-menu', on_right_click)
     icon.connect('activate', on_left_click)
     gtk.main()
